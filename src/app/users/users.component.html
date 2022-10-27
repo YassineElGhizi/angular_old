@@ -1,0 +1,9 @@
+<ul *ngFor="let user of users" >
+  <li>name : {{user.name}}</li>
+  <li>age : {{user.age}}</li>
+  <li>roles :
+    <ul *ngFor="let role of user.roles" >
+      <li>{{role['name']}}</li>
+    </ul>
+  </li>
+</ul>
